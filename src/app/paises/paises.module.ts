@@ -5,13 +5,18 @@ import { PorPaisComponent } from './components/por-pais/por-pais.component';
 import { PorRegionComponent } from './components/por-region/por-region.component';
 import { VerPaisComponent } from './components/ver-pais/ver-pais.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
+import { PaisInputComponent } from './components/pais-input/pais-input.component';
 
 @NgModule({
   declarations: [
     PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
-    VerPaisComponent
+    VerPaisComponent,
+    PaisTablaComponent,
+    PaisInputComponent
   ],
   exports: [
     PorCapitalComponent,
@@ -21,7 +26,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ]
 })
 export class PaisesModule { }
