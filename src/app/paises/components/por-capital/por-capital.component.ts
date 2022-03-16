@@ -8,7 +8,7 @@ import { PaisService } from '../../services/pais.service';
 })
 export class PorCapitalComponent implements OnInit {
 
-  termino:string = "hola mundo";
+  termino:string = "";
   existeError:boolean = false;
   paises:Countries[] = [];
 

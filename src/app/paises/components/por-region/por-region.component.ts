@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Countries } from '../../interfaces/pais.interface';
 import { PaisService } from '../../services/pais.service';
 
@@ -14,7 +15,9 @@ export class PorRegionComponent implements OnInit {
   existeError:boolean = false;
   paises:Countries[] = [];
 
-  constructor(private servicio:PaisService) { }
+  constructor(
+    private servicio:PaisService
+  ) { }
 
   ngOnInit(): void {
   }

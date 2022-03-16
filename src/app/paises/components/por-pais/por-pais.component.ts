@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Countries } from '../../interfaces/pais.interface';
 import { PaisService } from '../../services/pais.service';
 

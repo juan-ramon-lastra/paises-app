@@ -30,4 +30,9 @@ export class PaisService {
     return this.http.get<Countries[]>(url);
   }
 
+  detalleCodigo(termino:string):Observable<Countries[]> {
+    const url = `${this.apiUrl}/alpha/${termino}`;
+    return this.http.get<Countries[]>(url);
+  }
+
 }
